@@ -24,6 +24,21 @@ typedef struct
 PatchTable g_patch_table[] =
 {
 	{ 
+		FIRMWARE_VERSION_630, // PLACEHOLDER
+		{ 0x0D78, 0x0D78, 0x0D78, 0x0D78, 0x0D78, },
+		
+		/* for 05g mesgled */
+		0x6B44, //mesgled updater decrypt call
+		0x83E8, //mesgled updater decrypt func
+		
+		0x8138, //prologue func
+		0x705C, //prologue call
+		
+		{ 0x6930, 0x6954 }, //memlmd calls
+		{ 0x8398, 0x8378 }, //memlmd stubs
+	},
+	
+		{ 
 		FIRMWARE_VERSION_631, 
 		{ 0x0D78, 0x0D78, 0x0D78, 0x0D78, 0x0D78, },
 		
@@ -40,6 +55,21 @@ PatchTable g_patch_table[] =
 	
 	{
 		FIRMWARE_VERSION_635, 
+		{ 0x0D78, 0x0D78, 0x0D78, 0x0D78, 0x0D78, },
+		
+		/* for 05g mesgled */
+		0x5EB8, //mesgled updater decrypt call
+		0x7B58, //mesgled updater decrypt func
+		
+		0x8134, //prologue func
+		0x7058, //prologue call
+		
+		{ 0x5CA4, 0x5CC8 }, //memlmd calls
+		{ 0x7B08, 0x7AE8 }, //memlmd stubs
+	},
+	
+	{
+		FIRMWARE_VERSION_637, // PLACEHOLDER
 		{ 0x0D78, 0x0D78, 0x0D78, 0x0D78, 0x0D78, },
 		
 		/* for 05g mesgled */
