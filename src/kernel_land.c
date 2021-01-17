@@ -92,7 +92,7 @@ int patch_loadexec_phat(void)
 	/* Find the LoadExec */
 	SceModule2 *mod = pspKernelFindModuleByName("sceLoadExec");
 	
-	if(g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
+	if(g_devkit_version == FIRMWARE_VERSION_637 || g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
 	{
 		/* Patch the reboot process */
 		MAKE_CALL(mod->text_addr + 0x2DAC, RebootEntryPatched); //6.38		
@@ -119,7 +119,7 @@ int patch_loadexec_slim(void)
 	/* Find the LoadExec */
 	SceModule2 *mod = pspKernelFindModuleByName("sceLoadExec");
 	
-	if(g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
+	if(g_devkit_version == FIRMWARE_VERSION_637 || g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
 	{
 		/* Patch the reboot process */
 		MAKE_CALL(mod->text_addr + 0x2DAC, RebootEntryPatched); //6.38		
@@ -146,7 +146,7 @@ int patch_loadexec_3000(void)
 	/* Find the LoadExec */
 	SceModule2 *mod = pspKernelFindModuleByName("sceLoadExec");
 	
-	if(g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
+	if(g_devkit_version == FIRMWARE_VERSION_637 || g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
 	{
 		/* Patch the reboot process */
 		MAKE_CALL(mod->text_addr + 0x2DAC, RebootEntryPatched); //6.38		
@@ -173,7 +173,7 @@ int patch_loadexec_4000(void)
 	/* Find the LoadExec */
 	SceModule2 *mod = pspKernelFindModuleByName("sceLoadExec");
 	
-	if(g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
+	if(g_devkit_version == FIRMWARE_VERSION_637 || g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
 	{
 		/* Patch the reboot process */
 		MAKE_CALL(mod->text_addr + 0x2DAC, RebootEntryPatched); //6.38		
@@ -200,7 +200,7 @@ int patch_loadexec_pspgo(void)
 	/* Find the LoadExec */
 	SceModule2 *mod = pspKernelFindModuleByName("sceLoadExec");
 	
-	if(g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
+	if(g_devkit_version == FIRMWARE_VERSION_637 || g_devkit_version == FIRMWARE_VERSION_638 || g_devkit_version == FIRMWARE_VERSION_639 || g_devkit_version == FIRMWARE_VERSION_660 || g_devkit_version == FIRMWARE_VERSION_661)
 	{
 		/* Patch the reboot process */
 		MAKE_CALL(mod->text_addr + 0x2FF8, RebootEntryPatched); //6.38
@@ -314,7 +314,7 @@ int launch_updater(void)
 			break;
 		}
 
-		/* PSP E-1000 (Street) */
+		/* PSP E1000 (Street) */
 		case 10:
 		{
 			res = patch_loadexec_street();
