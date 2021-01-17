@@ -12,8 +12,10 @@
 #define REDIRECT_FUNCTION(a, f) 		{ u32 address = a; _sw(0x08000000 | (((u32)(f) >> 2)  & 0x03ffffff), address);  _sw(0, address+4); }
 #define MAKE_RELATIVE_BRANCH(a, f, t)	_sw((0x10000000 | ((((f - a) >> 2) - 1) & 0xFFFF)), a + t)
 
+#define FIRMWARE_VERSION_630	(0x06030010)
 #define FIRMWARE_VERSION_631	(0x06030110)
 #define FIRMWARE_VERSION_635	(0x06030510)
+#define FIRMWARE_VERSION_637	(0x06030710)
 #define FIRMWARE_VERSION_638	(0x06030810)
 #define FIRMWARE_VERSION_639	(0x06030910)
 #define FIRMWARE_VERSION_660	(0x06060010)
