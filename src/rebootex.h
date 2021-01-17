@@ -7,11 +7,14 @@
 #ifndef __REBOOTEX_H__
 #define __REBOOTEX_H__
 
+#define TAG_630			(0x4C9484F0)
 #define TAG_631			(0x4C9484F0)
 #define TAG_635			(0x4C9484F0)
+#define TAG_637			(0x4C9484F0)
 #define TAG_638			(0x4C948AF0)
 #define TAG_639			(0x4C948AF0)
 #define TAG_660			(0x4C9494F0)
+#define TAG_661			(0x4C9494F0)
 #define MODULE_ID_TAG	(0x626F6F42)
 
 /* variables */
