@@ -235,7 +235,7 @@ int main(int argc, char *argv[])
         model != 2 &&            /* PSP 3000 */
         model != 3 &&            /* PSP 4000 */
         model != 4 &&            /* PSPgo */
-        model != 10            /* PSP E-1000 (Street) */
+        model != 10            /* PSP E1000 (Street) */
     )
     {
         /* unsupported */
